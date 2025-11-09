@@ -1,0 +1,10 @@
+# This file tells build_runner what code to generate
+# and where to put it
+
+targets:
+  $default:
+    builders:
+      riverpod_generator:
+        options:
+          # Generate code in the same file with .g.dart extension
+          build_extensions: {".dart": [".g.dart"]}
